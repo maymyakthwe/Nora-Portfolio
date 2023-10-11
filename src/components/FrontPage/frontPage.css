@@ -1,3 +1,12 @@
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 #front-page-section {
     height: 100vh;
 }
@@ -43,7 +52,7 @@
 
 .texts {
     position: absolute;
-    bottom: 95px;
+    bottom: var(--text-level);
     width: 97%;
     margin: auto;
 }
@@ -55,6 +64,7 @@
 
 .text {
     position: relative;
+    left: 60px;
     padding: 15px 25px 15px 15px;
     margin-top: 8px;
     font-size: 160%;
@@ -62,14 +72,13 @@
     width: max-content;
     border-bottom-right-radius: 35px;
     border-top-right-radius: 35px;
-    transform: translateX(60px);
-
 }
 
 .typing {
-    padding: 5px 10px 5px 10px;
+    padding: 7px 15px 7px 15px;
     font-size: 160%;
-    margin-top: 8px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     background-color: var(--text-background);
     border-radius: 70px;
     display: flex;
@@ -80,7 +89,7 @@
 
 .typing div {
     color: rgb(85, 85, 85);
-    scale: 1.2;
+    scale: 1.3;
     transform: translateY(-6px);
     position: relative;
 }
@@ -117,12 +126,12 @@
 
 
 
-.text:nth-of-type(1) {
-    border-top-left-radius: 35px;
+li.text:nth-of-type(1) {
+    border-top-left-radius: 30px;
 }
 
-.text:nth-last-of-type(1) {
-    border-bottom-left-radius: 35px;
+li.text:nth-last-of-type(1) {
+    border-bottom-left-radius: 30px;
 }
 
 .texts img {
@@ -144,10 +153,8 @@
     border-radius: 45px;
     position: absolute;
     bottom: 0%;
-    left: 50%;
     box-sizing: border-box;
     width: 97%;
-    transform: translateX(-50%);
     margin: 15px 0;
 }
 
@@ -179,4 +186,17 @@
 
 .add-padding {
     padding: 0 20px;
+}
+
+.scroll-div {
+    position: absolute;
+    bottom: var(--text-level);
+    left: 50%;
+}
+
+.scroll-btn {
+    transform: translateX(-50%);
+    background-color: var(--text-background);
+    padding: 10px 20px;
+    border-radius: 20px;
 }

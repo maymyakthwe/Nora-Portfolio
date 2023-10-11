@@ -12,4 +12,5 @@ body {
 :root {
     --separator: rgb(219, 219, 219);
     --text-background: rgb(239, 239, 239);
+    --text-level: 95px;
 }
