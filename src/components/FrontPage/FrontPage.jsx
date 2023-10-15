@@ -14,7 +14,7 @@ import { BsMic } from 'react-icons/bs'
 import { HiOutlinePhotograph } from 'react-icons/hi'
 import { AiOutlineHeart } from 'react-icons/ai'
 import { BsEmojiLaughing } from 'react-icons/bs'
-import { IoIosArrowDown } from 'react-icons/io'
+import { CgChevronDoubleDown } from 'react-icons/cg'
 import Intro from '../Intro/Intro';
 
 
@@ -31,7 +31,12 @@ function FrontPage() {
     let [textRendered, settextRendered] = useState(false);
 
 
-
+    // let handleClick = () => {
+    //     window.scrollTo({
+    //         top: 100,
+    //         behavior: "smooth"
+    //     })
+    // }
 
     //text render 
     useEffect(() => {
@@ -109,14 +114,13 @@ function FrontPage() {
                     </div>
                 </Plx >
                 {
-                    textRendered && <Plx parallaxData={parallaxData4}><motion.div
-                        animate={{ y: [-15, 0, -15] }}
-                        transition={{ repeat: Infinity, duration: 1.5 }}
-                        className='scroll-div'>
-                        <div className='scroll-btn' ><IoIosArrowDown className='icon' /></div>
-                    </motion.div></Plx>
+                    textRendered && <Plx parallaxData={parallaxData4}>
+                        <motion.div
+                            animate={{ opacity: [1, 0, 1] }}
+                            transition={{ repeat: Infinity, duration: 1.5 }}
+                            className='scroll-down'><CgChevronDoubleDown className='icon' /></motion.div>
+                    </Plx>
                 }
-
             </div>
             <Intro />
         </section >

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;500;600;700&family=Kanit:wght@400;500;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;500;600;700&family=Kanit:wght@400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Tilt+Neon&display=swap');
 
 html,
 body {
@@ -7,10 +8,18 @@ body {
     border: none;
     outline: none;
     box-sizing: border-box;
+    height: 400vh;
 }
 
 :root {
     --separator: rgb(219, 219, 219);
     --text-background: rgb(239, 239, 239);
     --text-level: 95px;
+    --intro-bg: #f3abb7;
+    --intro-bg-light: #ffc8d2;
+    --intro-green: #829b65;
+}
+
+img {
+    width: 100%;
 }

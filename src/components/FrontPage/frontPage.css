@@ -188,15 +188,12 @@ li.text:nth-last-of-type(1) {
     padding: 0 20px;
 }
 
-.scroll-div {
-    position: absolute;
-    bottom: var(--text-level);
-    left: 50%;
-}
+/* scroll-down */
 
-.scroll-btn {
+.scroll-down {
+    position: absolute;
+    left: 50%;
     transform: translateX(-50%);
-    background-color: var(--text-background);
-    padding: 10px 20px;
-    border-radius: 20px;
+    bottom: var(--text-level);
+    font-size: 200%;
 }
