@@ -1,13 +1,20 @@
 #my-background {
-    background-color: var(--intro-bg);
-    height: 1000px;
+    height: 2500px;
     position: relative;
-    top: 200px;
+    top: 100px;
+    font-size: 5rem;
     display: flex;
-    justify-content: center;
     align-items: center;
     font-family: 'Aleo', serif;
     font-family: 'Kanit', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
     font-family: 'Tilt Neon', sans-serif;
+    white-space: nowrap;
+    background-color: var(--secondary);
+}
+
+.my-background-text {
+    position: absolute;
+    top: 400px;
+    left: 0;
 }

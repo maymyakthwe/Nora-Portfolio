@@ -3,7 +3,7 @@ import './frontPage.css'
 import Intro from '../Intro/Intro';
 import { motion, AnimatePresence } from 'framer-motion'
 import Plx from "react-plx";
-import { parallaxData1, parallaxData2, parallaxData3, parallaxData4 } from './parallax'   //plx-data
+import { parallaxData1, parallaxData2, parallaxData4 } from './parallax'   //plx-data
 
 import profile from '../../images/profile.png'
 
@@ -111,7 +111,7 @@ function FrontPage() {
                     </AnimatePresence>
                     <img src={profile} alt="profile-pic" />
                 </Plx>
-                <Plx parallaxData={parallaxData3} className='text-bar'>
+                <Plx parallaxData={parallaxData4} className='text-bar'>
                     <div className='text-bar-div'>
                         <div><RiEmojiStickerLine className='icon' /></div>
                         <div className='input'><input type="text" /></div>

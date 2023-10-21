@@ -8,7 +8,7 @@ body {
     border: none;
     outline: none;
     box-sizing: border-box;
-    height: 400vh;
+    height: 600vh;
 }
 
 :root {
@@ -18,6 +18,8 @@ body {
     --intro-bg: #f3abb7;
     --intro-bg-light: #ffc8d2;
     --intro-green: #829b65;
+    --secondary: #abf3db;
+    --tertiary: #dbf3ab;
 }
 
 img {
