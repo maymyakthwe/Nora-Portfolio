@@ -1,7 +1,7 @@
 .intro-section {
     height: 1000px;
     position: relative;
-    top: 0;
+    top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,6 +24,7 @@
     border-radius: 10%;
 }
 
+/*intro-text*/
 /*intro-text*/
 
 .intro-texts {
@@ -67,6 +68,7 @@
 }
 
 /*intro-buttons*/
+/*intro-buttons*/
 
 .intro-buttons button {
     font-size: 1.2rem;
@@ -82,6 +84,8 @@
 }
 
 /*glow-on-hover*/
+/*glow-on-hover*/
+
 .intro-buttons button {
     cursor: pointer;
     position: relative;
@@ -134,6 +138,16 @@
 }
 
 /*active kyn*/
+/*active kyn*/
+/*active kyn*/
+/*active kyn*/
+/*active kyn*/
+/*active kyn*/
+/*active kyn*/
+/*active kyn*/
+/*active kyn*/
+/*active kyn*/
+
 
 @keyframes glowing {
     0% {
@@ -150,6 +164,7 @@
 }
 
 /*intro-icons*/
+/*intro-icons*/
 
 .intro-icons {
     font-size: 2rem;
@@ -163,4 +178,38 @@
 
 .intro-icons a:nth-last-child(1) {
     margin-right: 0;
+}
+
+/*cloud*/
+/*cloud*/
+
+.cloud-1,
+.cloud-2,
+.heart,
+.thunder {
+    width: 200px;
+    filter: brightness(130%);
+    position: absolute;
+}
+
+.cloud-1 {
+    left: 50px;
+    bottom: 50px;
+}
+
+.cloud-2 {
+    right: 200px;
+    bottom: 0;
+}
+
+.heart {
+    right: 300px;
+    bottom: 550px;
+    rotate: 20deg;
+}
+
+.thunder {
+    left: 150px;
+    bottom: 550px;
+    rotate: -20deg;
 }

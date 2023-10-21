@@ -1,0 +1,13 @@
+#my-background {
+    background-color: var(--intro-bg);
+    height: 1000px;
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Aleo', serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Tilt Neon', sans-serif;
+}

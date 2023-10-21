@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './frontPage.css'
+import Intro from '../Intro/Intro';
 import { motion, AnimatePresence } from 'framer-motion'
 import Plx from "react-plx";
 import { parallaxData1, parallaxData2, parallaxData3, parallaxData4 } from './parallax'   //plx-data
@@ -15,7 +16,8 @@ import { HiOutlinePhotograph } from 'react-icons/hi'
 import { AiOutlineHeart } from 'react-icons/ai'
 import { BsEmojiLaughing } from 'react-icons/bs'
 import { CgChevronDoubleDown } from 'react-icons/cg'
-import Intro from '../Intro/Intro';
+
+
 
 
 
@@ -31,15 +33,9 @@ function FrontPage() {
     let [textRendered, settextRendered] = useState(false);
 
 
-    // let handleClick = () => {
-    //     window.scrollTo({
-    //         top: 100,
-    //         behavior: "smooth"
-    //     })
-    // }
-
     //text render 
     useEffect(() => {
+
 
         let delayedRender = (setfunction, delay) => {
             // console.log('typing...')
@@ -62,6 +58,17 @@ function FrontPage() {
             settyping(false);//typing btn
             settextRendered(true);//scroll-btn
         }, 12500);
+
+
+        let intro = document.querySelector('#intro-section');
+        intro.style.display = "none"
+        window.addEventListener('scroll', function () {
+            if (this.scrollY > 10) {
+                intro.style.display = "block"
+            } else {
+                intro.style.display = "none"
+            }
+        })
     }, [])
 
     return (
